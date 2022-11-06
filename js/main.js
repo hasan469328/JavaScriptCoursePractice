@@ -34,3 +34,37 @@ const anAdjective = "awesome!";
 let abcde = "freecodecamp is ";
 abcde += anAdjective;
 console.log(abcde);
+
+/* Find the length of a string */
+console.log(abcde.length);
+let abde = "hasan";
+console.log(abde.length);
+
+/* Use Bracket Notation to find the first character in a string */
+let abxz = "";
+const abef= "Hasan";
+abxz = abef[0];
+console.log(abxz);
+
+/* Nth character of a string */
+let anf = "Hasan";
+const fna = anf[3];
+console.log(fna);
+
+/* Last character of a string */
+let mno = "Hasan!";
+let onm = mno[mno.length - 1];
+console.log(onm);
+
+/* Use Bracket Notation to find the nth-to-last character ina string */
+let jkl = "Augusta"
+let lkj = jkl[jkl.length - 3];
+console.log(lkj);
+
+/* Word Blank My dog is so big and he can ran very quickly.*/
+let noun = "dog";
+let adjective = "big";
+let verb = "ran";
+let adverb = "quickly";
+const wordblank = "My " + noun + " is so " + adjective + " that it can " + verb + " very " + adverb + "."
+console.log(wordblank);
