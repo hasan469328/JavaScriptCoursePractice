@@ -89,3 +89,69 @@ function multiplyAll(arr) {
 
 multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
+/* Iterate with JavaScript Do...While Loops */
+
+const myArray1 = [];
+
+let k = 10;
+
+do {
+  myArray1.push(k);
+  k++; 
+} while ( k < 10);
+
+console.log(myArray1);
+
+// Recursive
+
+function factorial (n) {
+  if (n <= 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+};
+ console.log(factorial(4));
+
+ //use of spread operator
+
+//add the elements of an existing array into a new array.
+
+let certsAdd = ["Algorithms", "Front End"];
+let certificate = ["Responsive", ...certsAdd, "Data Visualization", "API"];
+
+console.log(certificate);
+
+//pass elements of an array as arguments to a function.
+
+function addThreeElements(x, y, z) {
+  return (x+y+z);
+}
+let spreadOperator = [22, 3, 5, 5, 15];
+console.log(addThreeElements(...spreadOperator));
+
+//copy arrays
+
+let arr = [1, 2, 3];
+let arr5 = [...arr];
+arr5.unshift(0);
+arr5.push(4);
+console.log(arr5);
+console.log(arr);
+
+//Concatenate arrays
+
+let array55 = [0, 1, 3, 5];
+let array1 = [2, 4, 6];
+/* console.log(array.concat(array1)); */
+array = [...array55, ...array1, "string", null, true];
+console.log(array);
+
+//Rest: Condense multiple elements into an array
+
+function multiply(multiplier, ...arg) {
+  return arg.map(function (a) {
+    return multiplier * a;
+  })
+}
+console.log(multiply(2, 1, 4, 6))
